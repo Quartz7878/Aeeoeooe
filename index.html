@@ -1,0 +1,56 @@
+index.html
+1.97 KB •53 lines
+Formatting may be inconsistent from source
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE Word Memorizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>GRE Word Memorizer</h1>
+            <div class="controls">
+                <div class="dropdown">
+                    <button id="groupSelector" class="dropdown-btn">Group 1</button>
+                    <div id="groupDropdown" class="dropdown-content">
+                        <!-- Groups will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="toggle-controls">
+                    <button id="shuffleGroup">Shuffle Group</button>
+                    <button id="shuffleMultiple">Shuffle Multiple Groups</button>
+                    <button id="resetShuffle">Reset Shuffle</button>
+                    <button id="resetMarking">Reset All Marking</button>
+                    <button id="resetDay">Reset Current Group</button>
+                </div>
+            </div>
+            <div class="instructions">
+                <p>Keyboard shortcuts: ← → (navigate), G (green), R (red), W (white), S (speak), D (details)</p>
+            </div>
+        </header>
+
+        <main>
+            <div id="wordContainer" class="word-container">
+                <!-- Words will be populated by JavaScript -->
+            </div>
+        </main>
+
+        <div id="wordModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalWord">Word</h2>
+                <div id="modalDefinition">Definition here</div>
+                <div id="modalExample">Example sentence here</div>
+                <div id="modalSynonyms">Synonyms: word1, word2</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
