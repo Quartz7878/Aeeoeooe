@@ -1,6 +1,3 @@
-README.md
-3.33 KB •86 lines
-Formatting may be inconsistent from source
 # GRE Word Memorizer
 
 A web-based application designed to help students memorize GRE vocabulary efficiently through an interactive flashcard system.
